@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+JavaFX-Version: 2.2
+Implementation-Vendor: 
+Implementation-Title: 
+Implementation-Version: 
+JavaFX-Application-Class: view.Main
+JavaFX-Class-Path: fastjson-1.2.22.jar javafx-autocomplete-field-1.0.j
+ ar javax.servlet-api-3.1.0.jar jetty-continuation-8.2.0.v20160908.jar
+  jetty-http-8.2.0.v20160908.jar jetty-io-8.2.0.v20160908.jar jetty-se
+ curity-8.2.0.v20160908.jar jetty-server-8.2.0.v20160908.jar jetty-ser
+ vlet-8.2.0.v20160908.jar jetty-util-8.2.0.v20160908.jar
+Created-By: JavaFX Packager
+Main-Class: com/javafx/main/Main
+

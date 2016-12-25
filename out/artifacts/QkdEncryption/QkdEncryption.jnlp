@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="QkdEncryption.jnlp">
+  <information>
+    <title>Sample JavaFX Application</title>
+    <vendor>Unknown vendor</vendor>
+    <description>Sample JavaFX 2.0 application.</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="2.2+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="QkdEncryption.jar" size="1352780" download="eager" />
+    <jar href="fastjson-1.2.22.jar" size="416348" download="eager" />
+    <jar href="javafx-autocomplete-field-1.0.jar" size="19008" download="eager" />
+    <jar href="javax.servlet-api-3.1.0.jar" size="95806" download="eager" />
+    <jar href="jetty-continuation-8.2.0.v20160908.jar" size="21191" download="eager" />
+    <jar href="jetty-http-8.2.0.v20160908.jar" size="96376" download="eager" />
+    <jar href="jetty-io-8.2.0.v20160908.jar" size="106042" download="eager" />
+    <jar href="jetty-security-8.2.0.v20160908.jar" size="89953" download="eager" />
+    <jar href="jetty-server-8.2.0.v20160908.jar" size="360329" download="eager" />
+    <jar href="jetty-servlet-8.2.0.v20160908.jar" size="102236" download="eager" />
+    <jar href="jetty-util-8.2.0.v20160908.jar" size="288222" download="eager" />
+  </resources>
+  <applet-desc  width="600" height="400" main-class="com.javafx.main.NoJavaFXFallback"  name="QkdEncryption" >
+    <param name="requiredFXVersion" value="2.2+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="600" height="400" main-class="view.Main"  name="QkdEncryption" />
+  <update check="background"/>
+</jnlp>

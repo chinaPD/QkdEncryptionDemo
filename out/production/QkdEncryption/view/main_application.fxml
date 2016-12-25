@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<?import component.AutoCompleteTextField?>
+<fx:root fx:id="root_grid_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+         prefHeight="624.0" prefWidth="832.0" styleClass="root" type="javafx.scene.layout.GridPane"
+         xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+    <columnConstraints>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+        <ColumnConstraints percentWidth="1" hgrow="NEVER"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+        <RowConstraints percentHeight="1" vgrow="NEVER"/>
+
+    </rowConstraints>
+
+    <GridPane alignment="CENTER"
+              GridPane.columnIndex="1" GridPane.columnSpan="98" GridPane.halignment="CENTER"
+              GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.rowSpan="9" GridPane.valignment="CENTER"
+              GridPane.vgrow="NEVER">
+        <GridPane.margin>
+            <Insets bottom="0.0" left="0.0" right="0.0" top="0.0"/>
+        </GridPane.margin>
+        <!-- <gridLinesVisible>true</gridLinesVisible>-->
+        <Label text="本地设置：" textAlignment="CENTER" GridPane.columnIndex="0"
+              GridPane.columnSpan="2" GridPane.halignment="LEFT"
+              GridPane.rowIndex="0" GridPane.rowSpan="2" GridPane.valignment="TOP" styleClass="title">
+            <GridPane.margin>
+                <Insets bottom="0.0" left="0.0" right="0.0" top="0.0"/>
+            </GridPane.margin>
+        </Label>
+        <Label text="网络名:" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="1"
+                GridPane.valignment="CENTER" GridPane.halignment="RIGHT" />
+        <AutoCompleteTextField fx:id="network_select" text="" GridPane.columnIndex="2" GridPane.rowIndex="1"
+                GridPane.valignment="CENTER" GridPane.halignment="LEFT"/>
+        <Label text="IP地址：" textAlignment="CENTER"  GridPane.columnIndex="3" GridPane.rowIndex="1"
+                GridPane.valignment="CENTER" GridPane.halignment="RIGHT" />
+        <AutoCompleteTextField fx:id="local_ip" maxWidth="175.0" prefHeight="26.0" prefWidth="175.0" text="127.0.0.1"
+                   GridPane.columnIndex="4" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.halignment="LEFT"/>
+        <Label text="端口号：" textAlignment="RIGHT" GridPane.columnIndex="5" GridPane.rowIndex="1"
+                GridPane.valignment="CENTER" GridPane.halignment="RIGHT" styleClass="label"/>
+        <TextField fx:id="local_port" maxWidth="69.0" prefHeight="26.0" prefWidth="47.0" text="6688"
+                   GridPane.columnIndex="6" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.halignment="LEFT"/>
+        <Button fx:id="local_ip_setting" onAction="#handleLocalIpSetting" text="开启"
+                GridPane.columnIndex="7" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.halignment="CENTER"/>
+        <columnConstraints>
+            <ColumnConstraints percentWidth="7" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="7" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="16" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="8" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="14" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="8" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="10" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="10" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="10" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="10" hgrow="NEVER"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints percentHeight="30" vgrow="NEVER"/>
+            <RowConstraints percentHeight="70" vgrow="NEVER"/>
+        </rowConstraints>
+    </GridPane>
+
+    <GridPane alignment="CENTER" GridPane.columnIndex="1" GridPane.columnSpan="98" GridPane.halignment="CENTER"
+              GridPane.hgrow="NEVER" GridPane.rowIndex="11" GridPane.rowSpan="9" GridPane.valignment="CENTER"
+              GridPane.vgrow="NEVER">
+        <!--<gridLinesVisible>true</gridLinesVisible>-->
+        <Label text="远程设置：" textAlignment="CENTER" GridPane.columnIndex="0"
+               GridPane.columnSpan="2" GridPane.rowIndex="0" GridPane.rowSpan="2" GridPane.valignment="TOP" GridPane.halignment="LEFT"
+               styleClass="title">
+            <GridPane.margin>
+                <Insets bottom="0.0" left="0.0" right="0.0" top="0.0"/>
+            </GridPane.margin>
+        </Label>
+        <Label  text="别 名：" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="1"
+                GridPane.valignment="CENTER" GridPane.halignment="RIGHT"/>
+        <AutoCompleteTextField fx:id="remote_net_alias" GridPane.valignment="CENTER" GridPane.halignment="LEFT"
+                               GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+        <Label text="IP地址：" textAlignment="RIGHT" GridPane.columnIndex="3" GridPane.rowIndex="1"
+                GridPane.valignment="CENTER" GridPane.halignment="RIGHT"/>
+        <AutoCompleteTextField fx:id="remote_ip" maxWidth="175.0" prefHeight="26.0" prefWidth="175.0"
+                   text="10.8.3.211" GridPane.columnIndex="4" GridPane.rowIndex="1"
+                GridPane.valignment="CENTER" GridPane.halignment="LEFT"/>
+        <Label text="端口号：" textAlignment="RIGHT" GridPane.columnIndex="5" GridPane.rowIndex="1"
+                GridPane.valignment="CENTER" GridPane.halignment="RIGHT"/>
+        <TextField fx:id="remote_port" maxWidth="69.0" prefHeight="26.0" prefWidth="47.0" text="6688"
+                   GridPane.columnIndex="6" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.halignment="LEFT"/>
+        <Button fx:id="remote_ip_setting" onAction="#handleRemoteIpSetting" text="设定"
+                GridPane.columnIndex="7" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.halignment="CENTER"/>
+        <columnConstraints>
+            <ColumnConstraints percentWidth="7" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="7" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="16" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="8" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="14" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="8" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="10" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="10" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="10" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="10" hgrow="NEVER"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints percentHeight="30" vgrow="NEVER"/>
+            <RowConstraints percentHeight="70" vgrow="NEVER"/>
+        </rowConstraints>
+    </GridPane>
+
+    <GridPane GridPane.columnIndex="1" GridPane.columnSpan="48" GridPane.halignment="CENTER" GridPane.hgrow="NEVER"
+              GridPane.rowIndex="22" GridPane.rowSpan="45" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+        <GridPane.margin>
+            <Insets bottom="0.0" left="0.0" right="0.0" top="0.0"/>
+        </GridPane.margin>
+        <ImageView fx:id="image_view" fitHeight="245" fitWidth="400" GridPane.columnIndex="0" GridPane.rowIndex="0"
+                   GridPane.hgrow="NEVER" GridPane.vgrow="NEVER" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+        </ImageView>
+
+        <HBox spacing="10" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+              GridPane.valignment="CENTER">
+            <HBox.margin>
+                <Insets bottom="5" left="5" right="5" top="5"/>
+            </HBox.margin>
+            <TextField fx:id="image_path" alignment="BASELINE_LEFT" minWidth="350"/>
+            <Button alignment="CENTER" onAction="#handleImageFileSeclect" text="..."/>
+        </HBox>
+        <columnConstraints>
+            <ColumnConstraints percentWidth="100" hgrow="NEVER"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints percentHeight="90" vgrow="NEVER"/>
+            <RowConstraints percentHeight="10" vgrow="NEVER"/>
+        </rowConstraints>
+    </GridPane>
+
+   <!-- <TextField fx:id="image_path" prefWidth="300" GridPane.columnIndex="2" GridPane.columnSpan="35"
+               GridPane.halignment="CENTER" GridPane.rowIndex="62" GridPane.rowSpan="5" GridPane.valignment="CENTER"/>
+    <Button onAction="#handleImageFileSeclect" text="..." GridPane.columnIndex="37" GridPane.columnSpan="8"
+            GridPane.halignment="CENTER" GridPane.rowIndex="62" GridPane.rowSpan="5" GridPane.valignment="CENTER"/>-->
+
+    <GridPane vgap="10" GridPane.columnIndex="51" GridPane.columnSpan="48" GridPane.halignment="CENTER"
+              GridPane.hgrow="NEVER" GridPane.rowIndex="22" GridPane.rowSpan="45" GridPane.valignment="CENTER"
+              GridPane.vgrow="NEVER">
+        <TextArea fx:id="key_text_view" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="0"
+                  GridPane.valignment="CENTER"/>
+        <HBox spacing="10" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+              GridPane.valignment="CENTER">
+            <HBox.margin>
+                <Insets bottom="5" left="5" right="5" top="5"/>
+            </HBox.margin>
+            <TextField fx:id="key_file_path" alignment="BASELINE_LEFT" minWidth="350"/>
+            <Button alignment="CENTER" onAction="#handleKeyFileSeclect" text="..."/>
+        </HBox>
+        <columnConstraints>
+            <ColumnConstraints/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints percentHeight="90"/>
+            <RowConstraints percentHeight="10"/>
+        </rowConstraints>
+    </GridPane>
+
+    <GridPane GridPane.columnIndex="80" GridPane.columnSpan="15" GridPane.rowIndex="70" GridPane.rowSpan="24"
+              GridPane.valignment="CENTER" GridPane.halignment="CENTER" GridPane.vgrow="NEVER" GridPane.hgrow="NEVER">
+
+        <Button GridPane.columnIndex="0" GridPane.rowIndex="0" onAction="#sendImageWithoutKey"
+                text=" 普通发送 " textAlignment="CENTER" GridPane.valignment="CENTER" GridPane.halignment="CENTER"/>
+
+        <Button GridPane.columnIndex="0" GridPane.rowIndex="1" onAction="#sendImageWithKey"
+                text=" 加密发送 " textAlignment="CENTER" GridPane.valignment="CENTER" GridPane.halignment="CENTER"/>
+
+        <Button GridPane.columnIndex="0" GridPane.rowIndex="2" onAction="#reproductEncryptedImage"
+                text=" 图像还原 " textAlignment="CENTER" GridPane.valignment="CENTER" GridPane.halignment="CENTER"/>
+
+        <Button GridPane.columnIndex="0" GridPane.rowIndex="3" onAction="#handleRouterRequest"
+                text=" 路由请求 " textAlignment="CENTER" GridPane.valignment="CENTER" GridPane.halignment="CENTER"/>
+
+
+        <columnConstraints>
+            <ColumnConstraints percentWidth="100" hgrow="NEVER"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints percentHeight="25" vgrow="NEVER"/>
+            <RowConstraints percentHeight="25" vgrow="NEVER"/>
+            <RowConstraints percentHeight="25" vgrow="NEVER"/>
+            <RowConstraints percentHeight="25" vgrow="NEVER"/>
+        </rowConstraints>
+    </GridPane>
+
+    <GridPane GridPane.columnIndex="2" GridPane.columnSpan="76" GridPane.rowIndex="70" GridPane.rowSpan="24"
+              GridPane.valignment="CENTER" GridPane.halignment="CENTER" GridPane.vgrow="NEVER" GridPane.hgrow="NEVER">
+
+        <Label text="路由设置：" textAlignment="CENTER" GridPane.columnIndex="0"
+               GridPane.columnSpan="2" GridPane.rowIndex="0" GridPane.rowSpan="2" GridPane.valignment="TOP" GridPane.halignment="LEFT"
+               styleClass="title"/>
+
+        <Label text="路由接口：" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="1"
+               GridPane.valignment="CENTER" GridPane.halignment="RIGHT"/>
+        <TextField fx:id="router_connector_field" GridPane.valignment="CENTER" GridPane.halignment="LEFT"
+                   GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+
+        <Label text="量子光波长：" textAlignment="RIGHT" GridPane.columnIndex="3" GridPane.rowIndex="1"
+               GridPane.valignment="CENTER" GridPane.halignment="RIGHT"/>
+        <TextField fx:id="quantum_optical_field" GridPane.valignment="CENTER" GridPane.halignment="LEFT"
+                   GridPane.columnIndex="4" GridPane.rowIndex="1"/>
+
+        <Label text="经典光波长：" textAlignment="RIGHT" GridPane.columnIndex="5" GridPane.rowIndex="1"
+               GridPane.valignment="CENTER" GridPane.halignment="RIGHT"/>
+        <TextField fx:id="classic_optical_field" GridPane.valignment="CENTER" GridPane.halignment="LEFT"
+                   GridPane.columnIndex="6" GridPane.rowIndex="1"/>
+
+        <Label text="通道带宽：" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="2"
+               GridPane.valignment="CENTER" GridPane.halignment="RIGHT"/>
+        <TextField fx:id="channel_num_field" GridPane.valignment="CENTER" GridPane.halignment="LEFT"
+                   GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+
+        <Label text="同步光波长：" textAlignment="RIGHT" GridPane.columnIndex="3" GridPane.rowIndex="2"
+               GridPane.valignment="CENTER" GridPane.halignment="RIGHT"/>
+        <TextField fx:id="sync_optical_field" GridPane.valignment="CENTER" GridPane.halignment="LEFT"
+                   GridPane.columnIndex="4" GridPane.rowIndex="2"/>
+
+        <Button text=" 路由设置 " GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.rowSpan="1"
+                onAction="#handleRouterInfoSetting" textAlignment="CENTER" GridPane.valignment="CENTER" GridPane.halignment="CENTER"/>
+
+        <Label text="交换机IP：" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="3"
+               GridPane.valignment="CENTER" GridPane.halignment="RIGHT"/>
+        <TextField fx:id="router_ip_field" GridPane.valignment="CENTER" GridPane.halignment="LEFT"
+                   GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3"/>
+
+        <Label text="交换机Port：" textAlignment="RIGHT" GridPane.columnIndex="4" GridPane.rowIndex="3"
+               GridPane.valignment="CENTER" GridPane.halignment="RIGHT"/>
+        <TextField fx:id="router_port_field" GridPane.valignment="CENTER" GridPane.halignment="LEFT"
+                   GridPane.columnIndex="5" GridPane.rowIndex="3"/>
+        <columnConstraints>
+            <ColumnConstraints percentWidth="10" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="15" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="10" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="18" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="16" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="17" hgrow="NEVER"/>
+            <ColumnConstraints percentWidth="14" hgrow="NEVER"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints percentHeight="25" vgrow="NEVER"/>
+            <RowConstraints percentHeight="25" vgrow="NEVER"/>
+            <RowConstraints percentHeight="25" vgrow="NEVER"/>
+            <RowConstraints percentHeight="25" vgrow="NEVER"/>
+        </rowConstraints>
+
+    </GridPane>
+
+
+    <stylesheets>
+        <URL value="@example.css"/>
+    </stylesheets>
+</fx:root>
