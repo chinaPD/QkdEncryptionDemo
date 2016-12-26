@@ -34,7 +34,7 @@ import java.util.Scanner;
 /**
  * Created by hadoop on 16-12-15.
  */
-public class CustomControl extends GridPane implements AutoClose, ServerCall {
+public class CustomControl extends GridPane implements AutoClose, ServerCall, HttpClientCall{
 
     private Stage mPrimaryStage;
     private PropertyBean mPropertyBean;
@@ -77,6 +77,8 @@ public class CustomControl extends GridPane implements AutoClose, ServerCall {
     private TextField router_ip_field;
     @FXML
     private TextField router_port_field;
+    @FXML
+    private TextField request_result_field;
     /******************Router Info************/
 
     List<NetInterfaceInfo> local_net_info_list;
@@ -140,6 +142,8 @@ public class CustomControl extends GridPane implements AutoClose, ServerCall {
 
         AutoClassMgr.registerAutoClose(this);
         ImageRcvServlet.registerServerCall(this);
+        HttpClientWrapper.registerHttpClientCall(this);
+
         if (mPropertyBean.RouterIp != null && mPropertyBean.RouterPort != 0) {
             HttpClientWrapper.setRouterIpPort(mPropertyBean.RouterIp, mPropertyBean.RouterPort);
             router_ip_field.setText(mPropertyBean.RouterIp);
@@ -176,14 +180,33 @@ public class CustomControl extends GridPane implements AutoClose, ServerCall {
         mRouterInfo.QuantumOptical = Double.valueOf(quantum_optical);
         mRouterInfo.SynOptical = Double.valueOf(sync_optical);
         mRouterInfo.ClassicOptical = Double.valueOf(classic_optical);
+
+        mPropertyBean.RouterIp = router_ip;
+        mPropertyBean.RouterPort = Integer.valueOf(router_port);
         HttpClientWrapper.setRouterIpPort(router_ip, Integer.valueOf(router_port));
 
     }
 
     public void handleLocalIpSetting(ActionEvent actionEvent) {
         System.out.println("Start Server!");
+        String alias = network_select.getText().trim();
         String ip = local_ip.getText().trim();
         int port = Integer.valueOf(local_port.getText().trim());
+        NetInterfaceInfo netInfo = NetCardMgr.findNetInfoByIp(local_net_info_list,ip);
+        if (netInfo != null) {
+            if (!alias.equals(netInfo.ALIAS)) {
+                network_select.getEntries().remove(netInfo.ALIAS);
+                network_select.getEntries().add(alias);
+                local_ip.getEntries().remove(netInfo.IP);
+                local_ip.getEntries().add(ip);
+            }
+            netInfo.ALIAS = alias;
+            netInfo.PORT = port;
+        } else {
+            local_net_info_list.add(new NetInterfaceInfo(ip, port, alias));
+            network_select.getEntries().add(alias);
+            local_ip.getEntries().add(ip);
+        }
         if (jetty != null) jetty.destroy();
         mRouterInfo.SourceIP = ip;
         jetty = new JettyServerWrapper(ip, port);
@@ -317,8 +340,15 @@ public class CustomControl extends GridPane implements AutoClose, ServerCall {
         image_view.setImage(image);*/
     }
 
+    private boolean RouterConnected = false;
     public void handleRouterRequest(ActionEvent actionEvent) {
-        HttpClientWrapper.sendRouterInfo(mRouterInfo.toString());
+        if (!RouterConnected) {
+            mRouterInfo.isConnected = 1;
+            HttpClientWrapper.sendRouterInfo(mRouterInfo.toString());
+        } else {
+
+        }
+
        /* String keyFilePath = key_file_path.getText().trim();
         if (keyFilePath == null || keyFilePath.length() == 0) return;
         String line = popFirstLineOfFile(keyFilePath);*/
@@ -386,6 +416,9 @@ public class CustomControl extends GridPane implements AutoClose, ServerCall {
         if (jetty != null) {
             jetty.destroy();
         }
+
+        mPropertyBean.LocalIpList = local_net_info_list;
+        mPropertyBean.RemoteIpList = remote_net_info_list;
     }
 
     TextFieldObserver local_net_name_observer = new TextFieldObserver() {
@@ -506,4 +539,8 @@ public class CustomControl extends GridPane implements AutoClose, ServerCall {
         return sb.toString();
     }
 
+    @Override
+    public void requestResult(String result) {
+        request_result_field.setText(result);
+    }
 }

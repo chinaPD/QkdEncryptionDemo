@@ -1,1 +1,1 @@
-{"LocalIpList":[["localhost","127.0.0.1",6688]],"RemoteIpList":[["localhost","127.0.0.1",6688]],"RouterPort":0}
+{"LocalIpList":[["localhost","127.0.0.1",6688],["eno1","10.109.8.230",6688]],"RemoteIpList":[["localhost","127.0.0.1",6688]],"RouterIp":"10.109.8.71","RouterPort":8080}

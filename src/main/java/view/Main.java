@@ -28,8 +28,8 @@ public class Main extends Application {
 
     @Override
     public void stop() throws Exception {
-        propertyWrapper.savePropertyBeanToJson();
         AutoClassMgr.doAllAutoClose();
+        propertyWrapper.savePropertyBeanToJson();
 //        jetty.destroy();
         super.stop();
     }

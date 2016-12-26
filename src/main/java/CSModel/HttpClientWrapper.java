@@ -1,5 +1,7 @@
 package CSModel;
 
+import controller.HttpClientCall;
+
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -22,9 +24,21 @@ public class HttpClientWrapper {
     private static String RouterIp;
     private static int RouterPort;
 
-    public static void setRouterIpPort(String ip, int port){
+    private static HttpClientCall mHttpClientCall;
+
+    public static void registerHttpClientCall(HttpClientCall clientCall) {
+        mHttpClientCall = clientCall;
+    }
+
+    public static void notifyRequestResult(String text) {
+        if (mHttpClientCall != null) {
+            mHttpClientCall.requestResult(text);
+        }
+    }
+
+    public static void setRouterIpPort(String ip, int port) {
         RouterIp = ip;
-        RouterPort =  port;
+        RouterPort = port;
     }
 
     public static void sendRouterInfo(final String jsonStr) {
@@ -56,9 +70,12 @@ public class HttpClientWrapper {
 
                     }
 
-                    System.out.println("Router Info Send,  ResponseCode: " + responseCode + "\n"
-                            + "    ResponseContent: " + requestStr);
+                    String result = "Router Info ResponseCode: " + responseCode
+                            + ", ResponseContent: " + requestStr;
+                    notifyRequestResult(result);
+                    System.out.println(result);
                 } catch (IOException e) {
+                    notifyRequestResult("Router Server can't be connected!!!");
                     e.printStackTrace();
                 } finally {
                     if (conn != null) {
@@ -139,7 +156,7 @@ public class HttpClientWrapper {
                     fileData.close();
                     out.close();*/
 
-                    addFormField(serverOutStream, "Encryption","None");
+                    addFormField(serverOutStream, "Encryption", "None");
                     File file = new File(fullFilePath);
                     addFilePart(serverOutStream, "file", file);
                     addMultiPartFinishBoundary(serverOutStream);
@@ -153,7 +170,7 @@ public class HttpClientWrapper {
                     }
 
                     System.out.println("ResponseCode: " + responseCode + "\n"
-                                + "    ResponseContent: " + requestStr);
+                            + "    ResponseContent: " + requestStr);
                 } catch (IOException e) {
                     e.printStackTrace();
                 } finally {
@@ -183,7 +200,7 @@ public class HttpClientWrapper {
 
                     OutputStream serverOutStream = conn.getOutputStream();
 
-                    addFormField(serverOutStream, "Encryption","AES");
+                    addFormField(serverOutStream, "Encryption", "AES");
 
                     addFilePart(serverOutStream, "file", imageBytes);
                     addMultiPartFinishBoundary(serverOutStream);
@@ -211,6 +228,7 @@ public class HttpClientWrapper {
         }).start();
 
     }
+
     /**
      * 读取流中的数据
      */
@@ -226,10 +244,11 @@ public class HttpClientWrapper {
 
     /**
      * Adds a form field to the request
-     * @param name field name
+     *
+     * @param name  field name
      * @param value field value
      */
-    public static void addFormField(OutputStream toServerStream,String name, String value) {
+    public static void addFormField(OutputStream toServerStream, String name, String value) {
         PrintWriter writer = new PrintWriter(toServerStream);
         writer.append("--" + BOUNDARY).append(LINE_FEED);
         writer.append("Content-Disposition: form-data; name=\"" + name + "\"")
@@ -243,7 +262,8 @@ public class HttpClientWrapper {
 
     /**
      * Adds a upload file section to the request
-     * @param fieldName name attribute in <input type="file" name="..." />
+     *
+     * @param fieldName  name attribute in <input type="file" name="..." />
      * @param uploadFile a File to be uploaded
      * @throws IOException
      */
@@ -317,10 +337,11 @@ public class HttpClientWrapper {
 
     /**
      * Adds a header field to the request.
-     * @param name - name of the header field
+     *
+     * @param name  - name of the header field
      * @param value - value of the header field
      */
-    public void addHeaderField(OutputStream toServerStream,String name, String value) {
+    public void addHeaderField(OutputStream toServerStream, String name, String value) {
         PrintWriter writer = new PrintWriter(toServerStream);
         writer.append(name + ": " + value).append(LINE_FEED);
         writer.flush();

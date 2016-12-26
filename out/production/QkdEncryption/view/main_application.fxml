@@ -394,7 +394,7 @@
         </rowConstraints>
     </GridPane>
 
-    <GridPane GridPane.columnIndex="2" GridPane.columnSpan="76" GridPane.rowIndex="70" GridPane.rowSpan="24"
+    <GridPane GridPane.columnIndex="2" GridPane.columnSpan="76" GridPane.rowIndex="70" GridPane.rowSpan="30"
               GridPane.valignment="CENTER" GridPane.halignment="CENTER" GridPane.vgrow="NEVER" GridPane.hgrow="NEVER">
 
         <Label text="路由设置：" textAlignment="CENTER" GridPane.columnIndex="0"
@@ -438,6 +438,11 @@
                GridPane.valignment="CENTER" GridPane.halignment="RIGHT"/>
         <TextField fx:id="router_port_field" GridPane.valignment="CENTER" GridPane.halignment="LEFT"
                    GridPane.columnIndex="5" GridPane.rowIndex="3"/>
+
+        <Label text="请求结果：" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="4"
+               GridPane.valignment="CENTER" GridPane.halignment="RIGHT"/>
+        <TextField fx:id="request_result_field" GridPane.valignment="CENTER" GridPane.halignment="LEFT"
+                   GridPane.columnIndex="2" GridPane.columnSpan="5" GridPane.rowIndex="4"/>
         <columnConstraints>
             <ColumnConstraints percentWidth="10" hgrow="NEVER"/>
             <ColumnConstraints percentWidth="15" hgrow="NEVER"/>
@@ -448,10 +453,11 @@
             <ColumnConstraints percentWidth="14" hgrow="NEVER"/>
         </columnConstraints>
         <rowConstraints>
-            <RowConstraints percentHeight="25" vgrow="NEVER"/>
-            <RowConstraints percentHeight="25" vgrow="NEVER"/>
-            <RowConstraints percentHeight="25" vgrow="NEVER"/>
-            <RowConstraints percentHeight="25" vgrow="NEVER"/>
+            <RowConstraints percentHeight="20" vgrow="NEVER"/>
+            <RowConstraints percentHeight="20" vgrow="NEVER"/>
+            <RowConstraints percentHeight="20" vgrow="NEVER"/>
+            <RowConstraints percentHeight="20" vgrow="NEVER"/>
+            <RowConstraints percentHeight="20" vgrow="NEVER"/>
         </rowConstraints>
 
     </GridPane>

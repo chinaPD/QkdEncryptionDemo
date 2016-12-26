@@ -24,6 +24,8 @@ public class RouterInfo {
     public double QuantumOptical = 1553.33;
     @JSONField(name = "ClassicOptical")
     public double ClassicOptical = 1550;
+    @JSONField(name = "isConnected")
+    public int isConnected = 1;
 
     @Override
     public String toString() {

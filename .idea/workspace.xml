@@ -78,11 +78,13 @@
       <file leaf-file-name="HttpClientWrapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/CSModel/HttpClientWrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+            <state relative-caret-position="231">
+              <caret line="72" column="28" lean-forward="false" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
               <folding>
-                <element signature="e#884#2469#0" expanded="true" />
-                <element signature="e#2468#2469#0" expanded="true" />
+                <element signature="e#776#777#0" expanded="true" />
+                <element signature="e#820#821#0" expanded="true" />
+                <element signature="e#1254#2996#0" expanded="true" />
+                <element signature="e#2995#2996#0" expanded="true" />
                 <element signature="method#postMultipartForm#1;class#HttpClientWrapper#0" expanded="false" />
               </folding>
             </state>
@@ -92,10 +94,9 @@
       <file leaf-file-name="Encryption.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/encryption/Encryption.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="230" column="0" lean-forward="false" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
+            <state relative-caret-position="63">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#1006#1007#0" expanded="true" />
                 <element signature="e#1073#1074#0" expanded="true" />
                 <element signature="e#1724#1725#0" expanded="true" />
@@ -105,27 +106,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomControl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CustomControl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/CustomControl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="105" column="18" lean-forward="false" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
+            <state relative-caret-position="411">
+              <caret line="348" column="0" lean-forward="true" selection-start-line="348" selection-start-column="0" selection-end-line="348" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#handleLocalIpSetting#0;class#CustomControl#0" expanded="false" />
+                <element signature="method#handleRemoteIpSetting#0;class#CustomControl#0" expanded="false" />
                 <element signature="method#handleImageFileSeclect#0;class#CustomControl#0" expanded="false" />
-                <element signature="method#receiveEncryptedFile#0;class#CustomControl#0" expanded="false" />
-                <element signature="e#16573#16574#0" expanded="true" />
-                <element signature="e#16626#16627#0" expanded="true" />
+                <element signature="e#17807#17808#0" expanded="true" />
+                <element signature="e#17860#17861#0" expanded="true" />
+                <element signature="e#19213#19214#0" expanded="true" />
+                <element signature="e#19265#19266#0" expanded="true" />
+                <marker date="1482731936225" expanded="false" signature="13972:14709" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="propertis.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/properties/propertis.json">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/view/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="52" lean-forward="false" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+            <state relative-caret-position="252">
+              <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -137,15 +142,14 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="381" column="93" lean-forward="false" selection-start-line="381" selection-start-column="74" selection-end-line="381" selection-end-column="93" />
+            <state relative-caret-position="348">
+              <caret line="443" column="46" lean-forward="false" selection-start-line="443" selection-start-column="26" selection-end-line="443" selection-end-column="46" />
               <folding>
                 <element signature="n#columnConstraints#0;n#fx:root#0;n#!!top" expanded="false" />
                 <element signature="n#rowConstraints#0;n#fx:root#0;n#!!top" expanded="false" />
                 <element signature="n#columnConstraints#0;n#GridPane#0;n#fx:root#0;n#!!top" expanded="false" />
                 <element signature="n#columnConstraints#0;n#GridPane#1;n#fx:root#0;n#!!top" expanded="false" />
                 <element signature="n#rowConstraints#0;n#GridPane#1;n#fx:root#0;n#!!top" expanded="false" />
-                <element signature="n#rowConstraints#0;n#GridPane#5;n#fx:root#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -155,17 +159,17 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/model/PropertyBean.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
-              <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+              <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RouterInfo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RouterInfo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/RouterInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+            <state relative-caret-position="315">
+              <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -192,6 +196,7 @@
       <find>init</find>
       <find>byte</find>
       <find>handleButtonPressed</find>
+      <find>AU</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -224,7 +229,6 @@
         <option value="$PROJECT_DIR$/src/main/java/model/NetCardManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/AutoClose.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/AutoClassMgr.java" />
-        <option value="$PROJECT_DIR$/src/main/java/view/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/component/AutoCompleteTextField.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/NetCardMgr.java" />
         <option value="$PROJECT_DIR$/src/main/java/CSModel/JettyServerWrapper.java" />
@@ -232,14 +236,17 @@
         <option value="$PROJECT_DIR$/src/main/java/controller/ServerCall.java" />
         <option value="$PROJECT_DIR$/src/main/java/CSModel/ImageRcvServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/encryption/Encryption.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/RouterInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CSModel/HttpClientWrapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/PropertyBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/view/main_application.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/CustomControl.java" />
         <option value="$PROJECT_DIR$/out/artifacts/QkdEncryption/QkdEncryption.html" />
         <option value="$PROJECT_DIR$/src/main/java/model/PropertyBeanWrapper.java" />
         <option value="$PROJECT_DIR$/out/artifacts/QkdEncryption/QkdEncryption.jnlp" />
+        <option value="$PROJECT_DIR$/src/main/java/view/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/main_application.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/HttClinetCall.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/HttpClientCall.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CSModel/HttpClientWrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/RouterInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/CustomControl.java" />
       </list>
     </option>
   </component>
@@ -320,6 +327,58 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QkdEncryption" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QkdEncryption" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QkdEncryption" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QkdEncryption" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="out" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -380,7 +439,7 @@
       <recent name="$PROJECT_DIR$/src/sample" />
     </key>
   </component>
-  <component name="RunManager" selected="JAR Application.QkdEncryption">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -754,16 +813,16 @@
       <workItem from="1481775076511" duration="11320000" />
       <workItem from="1481795850151" duration="13015000" />
       <workItem from="1482239768744" duration="78699000" />
-      <workItem from="1482574647996" duration="44437000" />
+      <workItem from="1482574647996" duration="51767000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174550000" />
+    <option name="totallyTimeSpent" value="181880000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="24" width="1863" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -771,11 +830,11 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41145834" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41145834" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986242" sideWeight="0.5061947" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26417172" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26417172" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296643" sideWeight="0.49380532" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986242" sideWeight="0.49380532" order="1" side_tool="false" content_ui="tabs" />
@@ -841,13 +900,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/bin/jdk7/src.zip!/java/util/Formatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="1888" column="6" lean-forward="true" selection-start-line="1888" selection-start-column="6" selection-end-line="1888" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/bin/jdk7/src.zip!/java/net/InetAddress.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-28732">
@@ -1127,84 +1179,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/encryption/Encryption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="230" column="0" lean-forward="false" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1006#1007#0" expanded="true" />
-            <element signature="e#1073#1074#0" expanded="true" />
-            <element signature="e#1724#1725#0" expanded="true" />
-            <element signature="e#1788#1789#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/PropertyBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/main_application.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="381" column="93" lean-forward="false" selection-start-line="381" selection-start-column="74" selection-end-line="381" selection-end-column="93" />
-          <folding>
-            <element signature="n#columnConstraints#0;n#fx:root#0;n#!!top" expanded="false" />
-            <element signature="n#rowConstraints#0;n#fx:root#0;n#!!top" expanded="false" />
-            <element signature="n#columnConstraints#0;n#GridPane#0;n#fx:root#0;n#!!top" expanded="false" />
-            <element signature="n#columnConstraints#0;n#GridPane#1;n#fx:root#0;n#!!top" expanded="false" />
-            <element signature="n#rowConstraints#0;n#GridPane#1;n#fx:root#0;n#!!top" expanded="false" />
-            <element signature="n#rowConstraints#0;n#GridPane#5;n#fx:root#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CSModel/HttpClientWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-          <folding>
-            <element signature="e#884#2469#0" expanded="true" />
-            <element signature="e#2468#2469#0" expanded="true" />
-            <element signature="method#postMultipartForm#1;class#HttpClientWrapper#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/QkdEncryption.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/CustomControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="105" column="18" lean-forward="false" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#handleImageFileSeclect#0;class#CustomControl#0" expanded="false" />
-            <element signature="method#receiveEncryptedFile#0;class#CustomControl#0" expanded="false" />
-            <element signature="e#16573#16574#0" expanded="true" />
-            <element signature="e#16626#16627#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/properties/propertis.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="52" lean-forward="false" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
           <folding />
         </state>
       </provider>
@@ -1225,17 +1203,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="e#1199#1200#0" expanded="true" />
-            <element signature="e#1227#1228#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/out/artifacts/QkdEncryption/QkdEncryption.jnlp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1252,12 +1219,106 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/HttpClientCall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CSModel/HttpClientWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="72" column="28" lean-forward="false" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+          <folding>
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#820#821#0" expanded="true" />
+            <element signature="e#1254#2996#0" expanded="true" />
+            <element signature="e#2995#2996#0" expanded="true" />
+            <element signature="method#postMultipartForm#1;class#HttpClientWrapper#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/properties/propertis.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="41" lean-forward="false" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/encryption/Encryption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#1006#1007#0" expanded="true" />
+            <element signature="e#1073#1074#0" expanded="true" />
+            <element signature="e#1724#1725#0" expanded="true" />
+            <element signature="e#1788#1789#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/RouterInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+        <state relative-caret-position="315">
+          <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/main_application.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="443" column="46" lean-forward="false" selection-start-line="443" selection-start-column="26" selection-end-line="443" selection-end-column="46" />
+          <folding>
+            <element signature="n#columnConstraints#0;n#fx:root#0;n#!!top" expanded="false" />
+            <element signature="n#rowConstraints#0;n#fx:root#0;n#!!top" expanded="false" />
+            <element signature="n#columnConstraints#0;n#GridPane#0;n#fx:root#0;n#!!top" expanded="false" />
+            <element signature="n#columnConstraints#0;n#GridPane#1;n#fx:root#0;n#!!top" expanded="false" />
+            <element signature="n#rowConstraints#0;n#GridPane#1;n#fx:root#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/PropertyBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/CustomControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="348" column="0" lean-forward="true" selection-start-line="348" selection-start-column="0" selection-end-line="348" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#handleLocalIpSetting#0;class#CustomControl#0" expanded="false" />
+            <element signature="method#handleRemoteIpSetting#0;class#CustomControl#0" expanded="false" />
+            <element signature="method#handleImageFileSeclect#0;class#CustomControl#0" expanded="false" />
+            <element signature="e#17807#17808#0" expanded="true" />
+            <element signature="e#17860#17861#0" expanded="true" />
+            <element signature="e#19213#19214#0" expanded="true" />
+            <element signature="e#19265#19266#0" expanded="true" />
+            <marker date="1482731936225" expanded="false" signature="13972:14709" ph="{...}" />
           </folding>
         </state>
       </provider>
