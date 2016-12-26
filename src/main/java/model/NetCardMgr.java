@@ -21,13 +21,15 @@ public class NetCardMgr {
 
     public static List<NetInterfaceInfo> getNetCardInfoList(List<NetInterfaceInfo> netInfos) {
         List<NetInterfaceInfo> netInfoList = new ArrayList<>();
+        for (NetInterfaceInfo info : netInfos) {
+            netInfoList.add(info);
+        }
         Set<Map<String, Object>> localNetSet = getLocalInetMac();
         NetInterfaceInfo info = findNetInfoByIp(netInfos, "127.0.0.1");
-        if (info != null) {
-            netInfoList.add(info);
-        } else {
+        if (info == null) {
             netInfoList.add(new NetInterfaceInfo("127.0.0.1", 6688, "localhost"));
         }
+
         if (localNetSet == null) return netInfoList;
         for (Map<String, Object> localNet : localNetSet) {
             String arch = (String) localNet.get(NETWORK_NAME);

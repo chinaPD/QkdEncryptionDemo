@@ -32,6 +32,12 @@ public class ImageRcvServlet extends HttpServlet {
             mServerCall.receiveEncryptedFile(dataBytes);
         }
     }
+
+    public static void receiveNormalFile(File imageFile) {
+        if (mServerCall != null) {
+            mServerCall.receiveNormalFile(imageFile);
+        }
+    }
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("Come in!");
@@ -46,13 +52,16 @@ public class ImageRcvServlet extends HttpServlet {
         if (contentType.equals("image/jpeg")) {
             if (fileName == null || fileName.equals("")) fileName = "temp" + Math.round(1000 * Math.random());
             InputStream fileContent = filePart.getInputStream();
-            File imageFile = new File(getClass().getResource("").getFile(), "../fileCache/" + fileName);
+            File imageFile = new File(getClass().getResource(".").getFile(), ".." + File.pathSeparator
+                    + "fileCache" + File.pathSeparator + fileName);
             if (!imageFile.exists()) {
                 imageFile.createNewFile();
             }
             imageFile.setWritable(true);
             OutputStream fileOut = new FileOutputStream(imageFile);
             copy(fileContent, fileOut);
+
+            receiveNormalFile(imageFile);
         } else {
             InputStream fileContent = filePart.getInputStream();
             long receivedFileSize = filePart.getSize();

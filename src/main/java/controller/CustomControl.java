@@ -240,9 +240,9 @@ public class CustomControl extends GridPane implements AutoClose, ServerCall, Ht
 
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Open Resource File");
-        File initialPath = new File("./");
+        File initialPath = new File(".");
         if (mPropertyBean.QkdPath != null) {
-            initialPath = new File(mPropertyBean.ImagePath);
+            initialPath = new File(mPropertyBean.QkdPath);
             fileChooser.setInitialDirectory(initialPath);
         }
         fileChooser.getExtensionFilters().addAll(
@@ -256,7 +256,7 @@ public class CustomControl extends GridPane implements AutoClose, ServerCall, Ht
         System.out.println("File Mime Type: " + mimeType);
         String fileFullPath = selectedFile.getAbsolutePath();
         key_file_path.setText(fileFullPath);
-        mPropertyBean.QkdPath = fileFullPath.substring(0, fileFullPath.lastIndexOf("/"));
+        mPropertyBean.QkdPath = fileFullPath.substring(0, fileFullPath.lastIndexOf(File.separatorChar));
 
         try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(selectedFile)))) {
             int charNum = 0;
@@ -291,7 +291,7 @@ public class CustomControl extends GridPane implements AutoClose, ServerCall, Ht
         }
         String fileFullPath = selectedFile.getAbsolutePath();
         image_path.setText(fileFullPath);
-        mPropertyBean.ImagePath = fileFullPath.substring(0, fileFullPath.lastIndexOf("/"));
+        mPropertyBean.ImagePath = fileFullPath.substring(0, fileFullPath.lastIndexOf(File.separatorChar));
         String mimeType = new MimetypesFileTypeMap().getContentType(selectedFile);
         System.out.println("File Mime Type: " + mimeType);
 
@@ -312,11 +312,16 @@ public class CustomControl extends GridPane implements AutoClose, ServerCall, Ht
     public void sendImageWithKey(ActionEvent actionEvent) {
         String imagePath = image_path.getText().trim();
         String keyFilePath = key_file_path.getText().trim();
-        if (keyFilePath == null || keyFilePath.length() == 0) return;
-        String binKeyStr = popFirstLineOfFile(keyFilePath);
+        String binKeyStr = null;
+        if (keyFilePath == null || keyFilePath.length() == 0) {
+            key_file_path.setText("don't have a key file!!!");
+        } else {
+            binKeyStr = popFirstLineOfFile(keyFilePath);
+        }
 
         byte[] dataBytes;
-        if (binKeyStr != null || binKeyStr.length() == 0) {
+        if (binKeyStr == null || binKeyStr.length() == 0) {
+            key_text_view.setText("无可用秘钥，将采用固定的默认秘钥加密！！！");
             dataBytes = Encryption.encryptFile2Bytes(imagePath);
         } else {
             dataBytes = Encryption.encryptFile2Bytes(imagePath, binKeyStr);
@@ -383,20 +388,46 @@ public class CustomControl extends GridPane implements AutoClose, ServerCall, Ht
         image_view.setImage(image);
     }
 
+    @Override
+    public void receiveNormalFile(File imageFile) {
+        Image image = null;
+        try {
+            image = new Image(new FileInputStream(imageFile));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        image_view.setImage(image);
+        image_path.setText("Image file comes for remote server!");
+    }
+
     public void reproductEncryptedImage(ActionEvent actionEvent) {
         if (receivedDataBytes == null) return;
         String keyFilePath = key_file_path.getText().trim();
-        if (keyFilePath == null || keyFilePath.length() == 0) return;
-        String binKeyStr = popFirstLineOfFile(keyFilePath);
+        String binKeyStr = null;
+        if (keyFilePath == null || keyFilePath.length() == 0) {
+            key_file_path.setText("don't have a key file!!!");
+        } else {
+            binKeyStr = popFirstLineOfFile(keyFilePath);
+        }
 
         File imageFile = null;
-        if (binKeyStr != null || binKeyStr.length() == 0) {
+        if (binKeyStr == null || binKeyStr.length() == 0) {
+            key_text_view.setText("无可用秘钥，将采用固定的默认秘钥解密！！！");
             imageFile = Encryption.decryptBytes2File(receivedDataBytes);
         } else {
             imageFile = Encryption.decryptBytes2File(receivedDataBytes, binKeyStr);
         }
 
         if (imageFile == null) {
+            imageFile = new File(
+                    getClass().getResource("../image/image_background.png").getFile()
+            );
+        }
+
+        String mimeType = new MimetypesFileTypeMap().getContentType(imageFile);
+        String type = mimeType.split("/")[0];
+        if (!type.equals("image")) {
+            image_path.setText("解密失败，请确认双方秘钥是否一致！");
             imageFile = new File(
                     getClass().getResource("../image/image_background.png").getFile()
             );
@@ -501,6 +532,7 @@ public class CustomControl extends GridPane implements AutoClose, ServerCall, Ht
     }
 
     public String popTopNLineOfFile(String filePath, int n) {
+        if (filePath == null || filePath.length() == 0) return null;
         File file = new File(filePath);
         Scanner fileScanner = null;
         try {
@@ -524,11 +556,12 @@ public class CustomControl extends GridPane implements AutoClose, ServerCall, Ht
             BufferedWriter out = new BufferedWriter(fileWriter);
             while (fileScanner.hasNextLine()) {
                 String next = fileScanner.nextLine();
-                key_text_view.appendText(next);
+                key_text_view.appendText(next + "\n");
                 if (next.equals("\n") || next.equals("\r\n")) {
                     out.newLine();
                 } else {
-                    out.write(next + "\r\n");
+                    out.write(next);
+                    out.newLine();
                 }
             }
             out.close();

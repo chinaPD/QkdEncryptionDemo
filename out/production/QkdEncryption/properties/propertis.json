@@ -1,1 +1,1 @@
-{"LocalIpList":[["localhost","127.0.0.1",6688],["eno1","10.109.8.230",6688]],"RemoteIpList":[["localhost","127.0.0.1",6688]],"RouterIp":"10.109.8.71","RouterPort":8080}
+{"ImagePath":"C:\\Users\\PD\\Pictures\\Camera Roll","LocalIpList":[["localhost","127.0.0.1",6688],["eth1","10.109.8.89",6688],["eth1","10.109.8.89",6688]],"QkdPath":"C:\\Users\\PD\\Desktop","RemoteIpList":[["localhost","127.0.0.1",6688]],"RouterPort":0}

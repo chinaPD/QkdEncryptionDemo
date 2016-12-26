@@ -284,8 +284,8 @@ public class Encryption {
 
     public static File compressBytes2Image(byte[] imageBytes) throws IOException {
         System.out.println("ByteSize: " + imageBytes.length + "\n");
-        File outputFile = new File(Encryption.class.getResource("../fileCache").getFile(),
-                "image.jpg");
+        File outputFile = new File(Encryption.class.getResource(".").getFile(),
+                ".." + File.pathSeparator +"fileCache" + File.pathSeparator + "image.jpg");
         outputFile.delete();
         outputFile.setWritable(true);
         if (!outputFile.exists()) {
